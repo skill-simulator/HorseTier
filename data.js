@@ -5,7 +5,7 @@
 //  例: img: "https://example.com/images/char01.png"
 // ============================================================
 var TR_CHARS = [
-  { id:1,  name:"キタサンブラック",     tier:"SS", type:"スピード", img:"https://img.atwiki.jp/unistare/pub/600x200.jpg", emoji:"🐎",
+  { id:1,  name:"キタサンブラック",     tier:"SS", type:"スピード", img:"https://github.com/skill-simulator/HorseTier/blob/main/copy_4l-2aa1df39371d6f04a46f269303fb87ef7edd23701fd443bf0706aa458339ed80.jpg", emoji:"🐎",
     rarity:"距離適性：短距離",
     stats:{spd:"S",sta:"B",pow:"A",guts:"B",wis:"A"},
     skills:[
