@@ -5,7 +5,7 @@
 //  例: img: "https://example.com/images/char01.png"
 // ============================================================
 var TR_CHARS = [
-  { id:1,  name:"シルバーウィング",     tier:"SS", type:"スピード", img:"https://img.atwiki.jp/unistare/pub/600x200.jpg", emoji:"🐎",
+  { id:1,  name:"キタサンブラック",     tier:"SS", type:"スピード", img:"https://img.atwiki.jp/unistare/pub/600x200.jpg", emoji:"🐎",
     rarity:"距離適性：短距離",
     stats:{spd:"S",sta:"B",pow:"A",guts:"B",wis:"A"},
     skills:[
@@ -13,7 +13,7 @@ var TR_CHARS = [
       {name:"逃げウマ魂", desc:"先頭に立つと闘志が燃え上がる",                     icon:"🔥", rarity:"金"},
       {name:"根性",       desc:"体力ギリギリでも粘り強く走れる",                   icon:"💪", rarity:"銀"}
     ]},
-  { id:2,  name:"ゴールデンサン",       tier:"SS", type:"スタミナ", img:"", emoji:"☀️",
+  { id:2,  name:"ベガ",       tier:"SS", type:"スタミナ", img:"", emoji:"☀️",
     rarity:"距離適性：長距離",
     stats:{spd:"B",sta:"S",pow:"A",guts:"S",wis:"B"},
     skills:[
