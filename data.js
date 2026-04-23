@@ -5,7 +5,7 @@
 //  例: img: "https://example.com/images/char01.png"
 // ============================================================
 var TR_CHARS = [
-  { id:1,  name:"シルバーウィング",     tier:"SS", type:"スピード", img:"", emoji:"🐎",
+  { id:1,  name:"シルバーウィング",     tier:"SS", type:"スピード", img:"https://img.atwiki.jp/unistare/pub/600x200.jpg", emoji:"🐎",
     rarity:"距離適性：短距離",
     stats:{spd:"S",sta:"B",pow:"A",guts:"B",wis:"A"},
     skills:[
