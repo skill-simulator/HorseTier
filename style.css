@@ -1,0 +1,349 @@
+/* ===== リセット・ベース ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  background: #f5f0e8;
+  color: #1a1a1a;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.page-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+/* ===== 検索バー ===== */
+.tr-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.tr-search input[type="text"] {
+  flex: 1;
+  min-width: 180px;
+  padding: 7px 12px;
+  border: 1px solid #e0dbd0;
+  border-radius: 3px;
+  font-size: 0.88em;
+  background: #fff;
+  color: #1a1a1a;
+  outline: none;
+}
+.tr-search input[type="text"]:focus {
+  border-color: #c8922a;
+}
+.tr-search select {
+  padding: 7px 12px;
+  border: 1px solid #e0dbd0;
+  border-radius: 3px;
+  font-size: 0.88em;
+  background: #fff;
+  color: #1a1a1a;
+  cursor: pointer;
+  outline: none;
+}
+
+/* ===== Tier セクション ===== */
+.tr-section {
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #e0dbd0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tr-tier-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-left: 5px solid transparent;
+}
+.tr-tier-SS { background: #3b3b3b; border-color: #e88c00; }
+.tr-tier-S  { background: #4a3a2a; border-color: #c8922a; }
+.tr-tier-A  { background: #3b3b3b; border-color: #a06010; }
+.tr-tier-B  { background: #3b3b3b; border-color: #888; }
+.tr-tier-C  { background: #3b3b3b; border-color: #555; }
+
+.tr-tier-label {
+  font-size: 1.2em;
+  font-weight: 700;
+  min-width: 32px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.tr-tier-SS .tr-tier-label,
+.tr-tier-S  .tr-tier-label { color: #e8c06a; }
+.tr-tier-A  .tr-tier-label { color: #c8c8c8; }
+.tr-tier-B  .tr-tier-label { color: #aaa; }
+.tr-tier-C  .tr-tier-label { color: #888; }
+
+.tr-tier-desc { font-size: 0.75em; letter-spacing: 0.1em; }
+.tr-tier-SS .tr-tier-desc,
+.tr-tier-S  .tr-tier-desc { color: #e8c06a; opacity: 0.8; }
+.tr-tier-A  .tr-tier-desc,
+.tr-tier-B  .tr-tier-desc,
+.tr-tier-C  .tr-tier-desc { color: #999; }
+
+/* ===== キャラグリッド ===== */
+.tr-chars-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 14px 14px;
+  background: #faf7f2;
+}
+
+/* ===== キャラカード ===== */
+.tr-char-card {
+  width: 76px;
+  cursor: pointer;
+  border: 1px solid #e0dbd0;
+  border-radius: 4px;
+  background: #fff;
+  padding: 8px 4px 7px;
+  text-align: center;
+  transition: border-color 0.15s, transform 0.1s, box-shadow 0.1s;
+}
+.tr-char-card:hover {
+  border-color: #c8922a;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.10);
+}
+.tr-char-card.tr-selected {
+  border: 2px solid #e88c00;
+  background: #fffbf2;
+}
+
+/* ===== アバター ===== */
+.tr-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: #f5f0e8;
+  border: 1px solid #e0dbd0;
+}
+.tr-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.tr-char-name {
+  font-size: 0.72em;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.3;
+  word-break: break-all;
+}
+.tr-char-type {
+  font-size: 0.65em;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+/* ===== 詳細パネル ===== */
+.tr-panel {
+  display: none;
+  background: #fff;
+  border: 1px solid #e0dbd0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.tr-panel.tr-visible { display: block; }
+
+.tr-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  background: #f5f0e8;
+  border-bottom: 1px solid #e0dbd0;
+  flex-wrap: wrap;
+}
+.tr-panel-avatar {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background: #fff;
+  border: 1px solid #e0dbd0;
+}
+.tr-panel-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.tr-panel-info { display: flex; flex-direction: column; gap: 4px; }
+.tr-panel-name {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+}
+.tr-panel-sub {
+  font-size: 0.80em;
+  color: #888;
+}
+.tr-tier-badge {
+  display: inline-block;
+  font-size: 0.72em;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+}
+.tr-tier-badge-SS { background: #e88c00; color: #fff; }
+.tr-tier-badge-S  { background: #c8922a; color: #fff; }
+.tr-tier-badge-A  { background: #5040b5; color: #fff; }
+.tr-tier-badge-B  { background: #0d6b52; color: #fff; }
+.tr-tier-badge-C  { background: #888;    color: #fff; }
+
+.tr-panel-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 18px;
+}
+.tr-panel-col {
+  flex: 1;
+  min-width: 240px;
+}
+
+.tr-section-label {
+  font-size: 0.65em;
+  letter-spacing: 0.18em;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== ステータスサマリー ===== */
+.tr-stats-summary {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.tr-stat-box {
+  flex: 1;
+  background: #faf7f2;
+  border: 1px solid #e0dbd0;
+  border-radius: 3px;
+  padding: 9px 6px;
+  text-align: center;
+}
+.tr-stat-lbl {
+  font-size: 0.65em;
+  color: #aaa;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+.tr-stat-val {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #c8922a;
+}
+.tr-stat-val-sm {
+  font-size: 0.88em;
+  font-weight: 700;
+  color: #c8922a;
+}
+
+/* ===== ステータスバー ===== */
+.tr-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  font-size: 0.80em;
+}
+.tr-bar-lbl {
+  width: 60px;
+  flex-shrink: 0;
+  color: #555;
+}
+.tr-bar-bg {
+  flex: 1;
+  height: 10px;
+  background: #f0ece4;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.tr-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+.tr-bar-num {
+  width: 30px;
+  text-align: right;
+  font-weight: 700;
+  color: #555;
+  flex-shrink: 0;
+}
+
+/* ===== スキル ===== */
+.tr-skill-row {
+  background: #faf7f2;
+  border: 1px solid #e8e2d8;
+  border-radius: 3px;
+  padding: 9px 12px;
+  margin-bottom: 7px;
+}
+.tr-skill-name {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.tr-skill-desc {
+  font-size: 0.80em;
+  color: #555;
+  line-height: 1.5;
+}
+.tr-skill-icon {
+  font-size: 15px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.tr-rarity {
+  font-size: 0.70em;
+  padding: 1px 7px;
+  border-radius: 2px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.tr-rarity-unique { background: #e88c00; color: #fff; }
+.tr-rarity-gold   { background: #fdf3e0; border: 1px solid #e8c06a; color: #a06010; }
+.tr-rarity-silver { background: #f5f5f5; border: 1px solid #ccc; color: #555; }
+.tr-rarity-bronze { background: #fdf3e0; border: 1px solid #c8922a; color: #888; }
+
+/* ===== レスポンシブ ===== */
+@media (max-width: 600px) {
+  .tr-panel-col  { min-width: 100%; }
+  .tr-char-card  { width: 68px; }
+  .tr-panel-info { gap: 3px; }
+}
