@@ -5,7 +5,7 @@
 //  img が空の場合は emoji が表示されます。
 // ============================================================
 var TR_CHARS = [
-  { id:1,  name:"シルバーウィング",     tier:"SS", type:"スピード", img:"", emoji:"🐎",
+  { id:1,  name:"シルバーウィング",     tier:"SS", type:"スピード", img:"https://img.atwiki.jp/unistare/pub/600x200.jpg", emoji:"🐎",
     rarity:"距離適性：短距離",
     stats:{spd:98,sta:72,pow:85,guts:80,wis:90},
     skills:[
