@@ -23,21 +23,23 @@ var TR_CHARS = [
       {name:"ペースアップLv3",       desc:"中盤の速度が大きくアップ"},
       {name:"勝負根性UPLv3",       desc:"レースの際にパラメーターの勝負根性が大きくアップ"}
     ]},
-  { id:3,  name:"ミスティグレース",     tier:"SS", type:"賢さ",     img:"", emoji:"🌸",
-    rarity:"距離適性：マイル",
-    stats:{spd:"A",sta:"B",pow:"B",guts:"C",wis:"S"},
+  { id:3,  name:"ベガ",     tier:"SS", type:"中距離",     img:"https://uma-furusato.com/archives/011/202103/14a37accfde16a9c6fee051b85a6e961da11502b4d231ddbacf9808d92f948e1.jpg", emoji:"🌸",
+    rarity:"1600m~2400m",
+    stats:{spd:"S",sta:"B",pow:"S",guts:"A",wis:"A"},
     skills:[
-      {name:"天才少女の閃き", desc:"レース中に最適ポジションを瞬時に判断", icon:"✨", rarity:"固有"},
-      {name:"先読み",         desc:"前方の状況を素早く把握して加速",         icon:"👁️", rarity:"金"},
-      {name:"集中力",         desc:"終盤の判断速度が上がる",                 icon:"🎯", rarity:"銀"}
+      {name:"上がり速度UPLv4", desc:"残り3ハロンから残り400mまでの速度がより大きくアップ},
+      {name:"クラシックの追い上げLv3",         desc:"2400mのレースの時に終盤から残400mまでの速度がより大きくアップ。2400ｍのレース以外の場合は大きくアップ"},
+      {name:"先手必勝Lv3",         desc:"序盤の速度が大きくアップ"},
+      {name:"抜け出しLv3",         desc:"残り3ハロンになった時点で順位が上位だった場合、残り400mまでの速度がより大きくアップ。上位ではない場合は、大きくアップ"}
     ]},
-  { id:4,  name:"インフィニティ",       tier:"SS", type:"パワー",   img:"", emoji:"♾️",
-    rarity:"距離適性：中距離",
-    stats:{spd:"A",sta:"A",pow:"S",guts:"S",wis:"B"},
+  { id:4,  name:"メジロオーロラ",       tier:"SS", type:"中距離",   img:"https://cdn.netkeiba.com/img.db.sp/show_photo.php?horse_id=1978106600&no=spdb&tn=&tmp=no&default_image=netkeiba", emoji:"♾️",
+    rarity:"距離適性：1600m~2600m",
+    stats:{spd:"S",sta:"A",pow:"S",guts:"S",wis:"A"},
     skills:[
-      {name:"無限の力", desc:"レース終盤でもパワーが衰えない",   icon:"♾️", rarity:"固有"},
-      {name:"鉄壁",     desc:"どんな状況でもペースを落とさない", icon:"🏰", rarity:"金"},
-      {name:"絶対突破", desc:"馬群の中でも前に出る力がある",     icon:"🔑", rarity:"銀"}
+      {name:"ステイヤーのレース速度アップLv3", desc:"2400ｍ以上のレースの時、レースの際に馬の最大速度がより大きくアップ。2400m未満のレースの場合は大きくアップ"},
+      {name:"体力転化Lv3",     desc:"中盤に入ってエネルギーが残っていた場合、中盤の速度がより大きくアップ。残っていない場合は、大きくアップ"},
+      {name:"先駆け", desc:"同一脚質の馬で勝負根性がより高い馬がいた場合、序盤の勝負根性がより大きくアップ。いない場合は大きくアップ"}
+      {name:"オールUPLv3", desc:"レースの際にスピード、スタミナ、性分根性、気性が大きくアップ"}
     ]},
   { id:5,  name:"ストームキング",       tier:"S",  type:"パワー",   img:"", emoji:"⚡",
     rarity:"距離適性：中距離",
