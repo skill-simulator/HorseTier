@@ -5,21 +5,23 @@
 //  例: img: "https://example.com/images/char01.png"
 // ============================================================
 var TR_CHARS = [
-  { id:1,  name:"キタサンブラック",     tier:"SS", type:"スピード", img:"https://github.com/skill-simulator/HorseTier/blob/main/copy_4l-2aa1df39371d6f04a46f269303fb87ef7edd23701fd443bf0706aa458339ed80.jpg", emoji:"🐎",
-    rarity:"距離適性：短距離",
-    stats:{spd:"S",sta:"B",pow:"A",guts:"B",wis:"A"},
+  { id:1,  name:"キタサンブラック",     tier:"SS", type:"万能", img:"https://img.atwiki.jp/unistare/attach/70/152/copy_4l-2aa1df39371d6f04a46f269303fb87ef7edd23701fd443bf0706aa458339ed80.jpg", emoji:"🐎",
+    rarity:"距離適性：1800m~3200m",
+    stats:{spd:"S",sta:"S",pow:"S",guts:"A",wis:"S"},
     skills:[
-      {name:"電光石火",   desc:"直線で爆発的な加速。スピードが一時的に大幅上昇", icon:"⚡", rarity:"固有"},
-      {name:"逃げウマ魂", desc:"先頭に立つと闘志が燃え上がる",                     icon:"🔥", rarity:"金"},
-      {name:"根性",       desc:"体力ギリギリでも粘り強く走れる",                   icon:"💪", rarity:"銀"}
+      {name:"渾身の末脚Lv3",   desc:"最終直線でエネルギーが残っていた場合、最終直線で加算される速度がより大きくアップ。残っていない場合は大きくアップ"},
+      {name:"先手必勝Lv4", desc:"序盤の速度がより大きくアップ"},
+      {name:"ペースアップLv4",desc:"中盤の速度がより大きくアップ"},
+      {name:"重馬場巧者Lv2",desc:"馬場状態が良以外の時、マイナス補正を軽減"}
     ]},
-  { id:2,  name:"ベガ",       tier:"SS", type:"スタミナ", img:"", emoji:"☀️",
-    rarity:"距離適性：長距離",
-    stats:{spd:"B",sta:"S",pow:"A",guts:"S",wis:"B"},
+  { id:2,  name:"モーリス",       tier:"SS", type:"マイル", img:"https://uma-furusato.com/archives/011/202103/copy_4l-7d2ebe3b372f97d56d93af80b362c53399dca2642bbef249ba5161144402182c.jpg", emoji:"☀️",
+    rarity:"距離適性：1600~2000m",
+    stats:{spd:"S",sta:"B",pow:"S",guts:"A",wis:"A"},
     skills:[
-      {name:"太陽のオーラ", desc:"長距離で底力が持続する固有スキル", icon:"🌟", rarity:"固有"},
-      {name:"長距離巡航",   desc:"後半のスタミナ消費を抑える",       icon:"🌊", rarity:"金"},
-      {name:"粘り腰",       desc:"ゴール前で失速しにくい",           icon:"🛡️", rarity:"銀"}
+      {name:"マイルの最終直線持続Lv3", desc:"1600mのレースの時に最終直線で加算される速度の持続時間がさらに大幅アップ。1600mのレース以外の場合はより大きくアップ"},
+      {name:"逆襲Lv4",   desc:"残り3ハロンになった時点で順位が下位だった場合は、残り400mまでの速度がさらに大幅アップ。下位ではない場合は、より大きくアップ"},
+      {name:"ペースアップLv3",       desc:"中盤の速度が大きくアップ"},
+      {name:"勝負根性UPLv3",       desc:"レースの際にパラメーターの勝負根性が大きくアップ"}
     ]},
   { id:3,  name:"ミスティグレース",     tier:"SS", type:"賢さ",     img:"", emoji:"🌸",
     rarity:"距離適性：マイル",
